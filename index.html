@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Patts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="letter-closed">
+    <div class="envelope-intro" id="envelopeIntro" aria-label="open birthday letter intro">
+      <div class="envelope-wrap">
+        <div class="envelope-letter">
+          <p>For Patts</p>
+        </div>
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+      </div>
+      <button type="button" class="open-letter-btn" id="openLetterBtn">Open Letter</button>
+    </div>
+
+    <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+    <div class="hearts" id="hearts" aria-hidden="true"></div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+    <main class="page-wrap">
+      <section class="paper-card">
+        <header class="hero">
+          <p class="eyebrow">A Birthday Letter</p>
+          <h1>happy birthday to my whole world</h1>
+          <p class="hero-sub">To the most loving Patts, today and always.</p>
+        </header>
+
+        <section class="main-feature" aria-label="main birthday frame">
+          <figure class="main-photo">
+            <img src="./photos/photo5.jpg" alt="Patts main birthday portrait" />
+            <figcaption>prettiest birthday girl</figcaption>
+          </figure>
+        </section>
+
+        <section class="photo-section" aria-label="photo holder area">
+          <h2>Our Cherished Memories</h2>
+          <div class="photo-grid">
+            <figure class="photo-slot">
+              <img src="./photos/photo1.JPG" alt="Patts with granddaughter at dinner" />
+              <figcaption>Dinner Memory</figcaption>
+            </figure>
+            <figure class="photo-slot">
+              <img src="./photos/photo2.JPG" alt="Patts seated with family in a heritage home" />
+              <figcaption>Classic Day Out</figcaption>
+            </figure>
+            <figure class="photo-slot">
+              <img src="./photos/photo3.JPG" alt="Patts in purple sari with granddaughter" />
+              <figcaption>Festive Love</figcaption>
+            </figure>
+            <figure class="photo-slot">
+              <img src="./photos/photo4.jpg" alt="Patts with two granddaughters" />
+              <figcaption>Old Sweet Memory</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="message-block" aria-label="paragraph area" id="noteBlock">
+          <h2>A Little Note</h2>
+          <div
+            class="typewriter-text"
+            id="typedNote"
+            data-note="my beautiful grandma, mom and whole heart. thank you for taking care of me as your own. love you for ever and ever you are the biggest blessing to all our livess"
+          ></div>
+        </section>
+
+        <section class="blessings" id="blessingsSection" aria-label="blessings counter">
+          <p class="blessings-label">Blessings Count</p>
+          <p class="blessings-number" id="blessingsNumber">0</p>
+          <p class="blessings-sub">for Patts and counting...</p>
+        </section>
+
+        <section class="slides" aria-label="66 birthday messages">
+          <h2>66 Love Notes For Patts</h2>
+          <div class="slide-card" id="slideCard">
+            <p class="slide-count" id="slideCount">Slide 1 / 66</p>
+            <p class="slide-text" id="slideText"></p>
+          </div>
+          <button class="next-btn" id="nextSlideBtn" type="button">
+            Open Next Message
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
